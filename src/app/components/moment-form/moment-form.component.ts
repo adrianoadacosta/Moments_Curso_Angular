@@ -1,10 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-moment-form',
   templateUrl: './moment-form.component.html',
   styleUrls: ['./moment-form.component.css']
 })
-export class MomentFormComponent {
+export class MomentFormComponent implements OnInit {
+  @Input() btntext!: string;
+
+  constructor(){}
+  ngOnInit(): void {
+    
+  }
 
 }

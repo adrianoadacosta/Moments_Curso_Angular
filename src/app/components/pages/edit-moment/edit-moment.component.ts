@@ -39,7 +39,7 @@ export class EditMomentComponent implements OnInit {
     }
     await this.momentService.updateMoment(id!, formData).subscribe();
 
-    this.messageService.add(`O Momento ${id} foi atualizado com sucesso!`);
+    this.messageService.add(`O Momento ${this.moment.title} foi atualizado com sucesso!`);
     this.router.navigate(['/']);
   }
 }
